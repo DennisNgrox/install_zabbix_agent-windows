@@ -10,9 +10,9 @@ netsh advfirewall firewall add rule name="Zabbix Agent" dir=in action=allow prot
 
 REM Instalar Zabbix Agent
 msiexec /l*v %TEMP%\install-zabbix-agent-log.txt /i %TEMP%\zabbix_agent.msi^
- SERVER=10.202.45.13,146.235.38.74^
- SERVERACTIVE=10.202.45.13,146.235.38.74^
- HOSTNAME=teste^
+ SERVER=<ip>^
+ SERVERACTIVE=<ip>^
+ HOSTNAME=<hostname>^
  TIMEOUT=15^
  /qn
 
